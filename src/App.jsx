@@ -25,7 +25,6 @@ function App() {
           engordes. No hacer deporte si.{" "}
         </h3>
       </div>
-      <Button colorScheme="blue">Button</Button>
     </ChakraProvider>
   );
 }
