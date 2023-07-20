@@ -4,11 +4,64 @@ import {
   UnorderedList,
   Box,
   Text,
-  Stack,
 } from "@chakra-ui/react";
 import "./App.css";
+import { DailyMenu } from "./components/DailyMenu";
 
 function App() {
+  const days = [
+    {
+      dayOfTheWeek: "Lunes",
+      meals: [
+        {
+          name: "Desayuno",
+          description: "yogur griego con nueces, almendras y platano",
+        },
+        {
+          name: "Comida",
+          description: "hamburguesa de angus con mango y queso chedar fundido",
+        },
+        {
+          name: "Cena",
+          description: "ensalada de atun con tomate y maiz",
+        },
+      ],
+    },
+    {
+      dayOfTheWeek: "Martes",
+      meals: [
+        {
+          name: "Desayuno",
+          description: "yogur griego con nueces, almendras y platano",
+        },
+        {
+          name: "Comida",
+          description: "hamburguesa de angus con mango y queso chedar fundido",
+        },
+        {
+          name: "Cena",
+          description: "ensalada de atun con tomate y maiz",
+        },
+      ],
+    },
+    {
+      dayOfTheWeek: "Miercoles",
+      meals: [
+        {
+          name: "Desayuno",
+          description: "yogur griego con nueces, almendras y platano",
+        },
+        {
+          name: "Comida",
+          description: "hamburguesa de angus con mango y queso chedar fundido",
+        },
+        {
+          name: "Cena",
+          description: "ensalada de atun con tomate y maiz",
+        },
+      ],
+    },
+  ];
   return (
     <ChakraProvider>
       <Box w="370px" m="auto" p={4} align="left">
@@ -37,25 +90,9 @@ function App() {
           </Text>
         </Box>
         <Box>
-          <Box>
-            <Text mb="8px" fontSize="xl">
-              Lunes
-            </Text>
-            <Stack spacing={1}>
-              <Text fontSize="sm">
-                <strong style={{ fontWeight: 600 }}>Desayuno:</strong> yogur
-                griego con nueces, almendras y platano
-              </Text>
-              <Text fontSize="sm">
-                <strong style={{ fontWeight: 600 }}>Comida:</strong> hamburguesa
-                de angus con mango y queso chedar fundido
-              </Text>
-              <Text fontSize="sm">
-                <strong style={{ fontWeight: 600 }}>Cena:</strong> Ensalada de
-                atun con tomate y maiz
-              </Text>
-            </Stack>
-          </Box>
+          {days.map((day) => (
+            <DailyMenu day={day}></DailyMenu>
+          ))}
         </Box>
       </Box>
     </ChakraProvider>
