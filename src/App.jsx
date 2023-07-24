@@ -15,15 +15,15 @@ function App() {
       meals: [
         {
           name: "Desayuno",
-          description: "yogur griego con nueces, almendras y platano",
+          description: "tostada con tomate",
         },
         {
           name: "Comida",
-          description: "hamburguesa de angus con mango y queso chedar fundido",
+          description: "pollo teryaki con arroz, tomate cherry y mango",
         },
         {
           name: "Cena",
-          description: "ensalada de atun con tomate y maiz",
+          description: "jamon serrano con ensalada de aguacate, tomate y paraguayo",
         },
       ],
     },
@@ -40,7 +40,7 @@ function App() {
         },
         {
           name: "Cena",
-          description: "ensalada de atun con tomate y maiz",
+          description: "ensalada de atun con queso, tomate y maiz",
         },
       ],
     },
