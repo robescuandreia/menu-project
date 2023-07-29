@@ -19,11 +19,12 @@ function App() {
         },
         {
           name: "Comida",
-          description: "pollo teryaki con arroz, tomate cherry y mango",
+          description: "pollo teriyaki al horno, con arroz, tomate cherry y mango",
         },
         {
           name: "Cena",
-          description: "jamon serrano con ensalada de aguacate, tomate y paraguayo",
+          description:
+            "ensalada de aguacate, tomate y paraguayo con pollo rebozado",
         },
       ],
     },
@@ -32,7 +33,7 @@ function App() {
       meals: [
         {
           name: "Desayuno",
-          description: "yogur griego con nueces, almendras y platano",
+          description: "tostada con mantequilla y marmelada",
         },
         {
           name: "Comida",
@@ -40,7 +41,7 @@ function App() {
         },
         {
           name: "Cena",
-          description: "ensalada de atun con queso, tomate y maiz",
+          description: "ensalada de atun, queso, tomate y maiz",
         },
       ],
     },
@@ -49,15 +50,80 @@ function App() {
       meals: [
         {
           name: "Desayuno",
-          description: "yogur griego con nueces, almendras y platano",
+          description: "galletas de avena y manzana con kiwi y naranja",
         },
         {
           name: "Comida",
-          description: "hamburguesa de angus con mango y queso chedar fundido",
+          description: "pizza marguerita con albahaca, tomate cherry y aceitunas",
         },
         {
           name: "Cena",
-          description: "ensalada de atun con tomate y maiz",
+          description: "pavo con calabacin y pina al horno",
+        },
+      ],
+    },
+    {
+      dayOfTheWeek: "Jueves",
+      meals: [
+        {
+          name: "Desayuno",
+          description: "leche con cereales y nueces",
+        },
+        {
+          name: "Comida",
+          description: "pasta con salsa bolonesa, tomate cherry y parmesano",
+        },
+        {
+          name: "Cena",
+          description: "patatas, zanahorias, champinones y calabacin al horno",
+        },
+      ],
+    },{
+      dayOfTheWeek: "Viernes",
+      meals: [
+        {
+          name: "Desayuno",
+          description: "tostada con tomate",
+        },
+        {
+          name: "Comida",
+          description: "pizza barbacoa",
+        },
+        {
+          name: "Cena",
+          description: "patatas, zanahorias, broccoli y pimiento al horno",
+        },
+      ],
+    },{
+      dayOfTheWeek: "Sabado",
+      meals: [
+        {
+          name: "Desayuno",
+          description: "tostada con mantequilla y marmelada",
+        },
+        {
+          name: "Comida",
+          description: "parmigiana",
+        },
+        {
+          name: "Cena",
+          description: "picoteo de gazpacho, bocadillo jamon, hummus y queso",
+        },
+      ],
+    },{
+      dayOfTheWeek: "Domingo",
+      meals: [
+        {
+          name: "Desayuno",
+          description: "bizcocho o brownie con yogur griego",
+        },
+        {
+          name: "Comida",
+          description: "broccoli gratinado",
+        },
+        {
+          name: "Cena",
+          description: "picoteo de gazpacho, bocadillo pollo rebozado, hummus y aceitunas",
         },
       ],
     },
