@@ -4,6 +4,8 @@ import {
   UnorderedList,
   Box,
   Text,
+  Stack,
+  Checkbox,
 } from "@chakra-ui/react";
 import "./App.css";
 import { DailyMenu } from "./components/DailyMenu";
@@ -19,7 +21,8 @@ function App() {
         },
         {
           name: "Comida",
-          description: "pollo teriyaki al horno, con arroz, tomate cherry y mango",
+          description:
+            "pollo teriyaki al horno, con arroz, tomate cherry y mango",
         },
         {
           name: "Cena",
@@ -54,7 +57,8 @@ function App() {
         },
         {
           name: "Comida",
-          description: "pizza marguerita con albahaca, tomate cherry y aceitunas",
+          description:
+            "pizza marguerita con albahaca, tomate cherry y aceitunas",
         },
         {
           name: "Cena",
@@ -78,7 +82,8 @@ function App() {
           description: "patatas, zanahorias, champinones y calabacin al horno",
         },
       ],
-    },{
+    },
+    {
       dayOfTheWeek: "Viernes",
       meals: [
         {
@@ -94,7 +99,8 @@ function App() {
           description: "patatas, zanahorias, broccoli y pimiento al horno",
         },
       ],
-    },{
+    },
+    {
       dayOfTheWeek: "Sabado",
       meals: [
         {
@@ -110,7 +116,8 @@ function App() {
           description: "picoteo de gazpacho, bocadillo jamon, hummus y queso",
         },
       ],
-    },{
+    },
+    {
       dayOfTheWeek: "Domingo",
       meals: [
         {
@@ -123,14 +130,17 @@ function App() {
         },
         {
           name: "Cena",
-          description: "picoteo de gazpacho, bocadillo pollo rebozado, hummus y aceitunas",
+          description:
+            "picoteo de gazpacho, bocadillo pollo rebozado, hummus y aceitunas",
         },
       ],
     },
   ];
+  
   return (
     <ChakraProvider>
       <Box w="370px" m="auto" p={4} align="left">
+        {/* title description container */}
         <Box mb="16px">
           <Text mb="8px" align="center" fontSize="4xl">
             Menu Semanal
@@ -155,10 +165,22 @@ function App() {
             que engordes. No hacer deporte si.
           </Text>
         </Box>
-        <Box>
+        {/* weekdays container */}
+        <Box mb="32px">
           {days.map((day) => (
             <DailyMenu day={day}></DailyMenu>
           ))}
+        </Box>
+        <Box>
+          <Text mb="16px" fontSize="2xl">
+            Lista de la compra
+          </Text>
+          <Box>
+            <Stack spacing={1} direction="column">
+              <Checkbox>Calabacin</Checkbox>
+              <Checkbox>Pimientos</Checkbox>
+            </Stack>
+          </Box>
         </Box>
       </Box>
     </ChakraProvider>
