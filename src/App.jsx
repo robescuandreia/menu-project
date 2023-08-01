@@ -10,6 +10,22 @@ import {
 import "./App.css";
 import { DailyMenu } from "./components/DailyMenu";
 
+
+// days - array of objects
+//  dayOfTheWeek - string
+//  image - string
+//  meals - array of objects
+//    name - string
+//    description - string
+//    ingredients - array of objects
+//      name - string
+//      category - string
+
+
+// categories - array of objects
+//  name - string
+//  uniqueIngredients - array of strings
+
 function App() {
   const days = [
     {
