@@ -6,8 +6,14 @@ export function DailyMenu({ day }) {
       <Text mb="8px" fontSize="xl">
         {day.dayOfTheWeek}
       </Text>
-      <Box boxSize="sm">
-        <Image src={day.image} />
+      <Box mb="16px">
+        <Image
+          src={day.image}
+          height="160px"
+          width="-webkit-fill-available"
+          objectFit="cover"
+          borderRadius="15px"
+        />
       </Box>
       <Stack mb="16px" spacing={1}>
         {day.meals.map(({ name, description }) => (
