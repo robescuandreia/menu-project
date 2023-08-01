@@ -7,7 +7,7 @@ export function DailyMenu({ day }) {
         {day.dayOfTheWeek}
       </Text>
       <Box boxSize="sm">
-        <Image src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d7f0a66959f544f5b885f3bd993f072f/BFV43733_ChowMein4Ways_FB1080SQ.jpg" />
+        <Image src={day.image} />
       </Box>
       <Stack mb="16px" spacing={1}>
         {day.meals.map(({ name, description }) => (

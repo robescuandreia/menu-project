@@ -14,6 +14,8 @@ function App() {
   const days = [
     {
       dayOfTheWeek: "Lunes",
+      image:
+        "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d7f0a66959f544f5b885f3bd993f072f/BFV43733_ChowMein4Ways_FB1080SQ.jpg",
       meals: [
         {
           name: "Desayuno",
@@ -51,6 +53,9 @@ function App() {
     },
     {
       dayOfTheWeek: "Martes",
+      image:
+        "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d7f0a66959f544f5b885f3bd993f072f/BFV43733_ChowMein4Ways_FB1080SQ.jpg",
+
       meals: [
         {
           name: "Desayuno",
@@ -76,6 +81,9 @@ function App() {
     },
     {
       dayOfTheWeek: "Miercoles",
+      image:
+        "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d7f0a66959f544f5b885f3bd993f072f/BFV43733_ChowMein4Ways_FB1080SQ.jpg",
+
       meals: [
         {
           name: "Desayuno",
@@ -113,6 +121,9 @@ function App() {
     },
     {
       dayOfTheWeek: "Jueves",
+      image:
+        "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d7f0a66959f544f5b885f3bd993f072f/BFV43733_ChowMein4Ways_FB1080SQ.jpg",
+
       meals: [
         {
           name: "Desayuno",
@@ -145,6 +156,9 @@ function App() {
     },
     {
       dayOfTheWeek: "Viernes",
+      image:
+        "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d7f0a66959f544f5b885f3bd993f072f/BFV43733_ChowMein4Ways_FB1080SQ.jpg",
+
       meals: [
         {
           name: "Desayuno",
@@ -165,6 +179,9 @@ function App() {
     },
     {
       dayOfTheWeek: "Sabado",
+      image:
+        "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d7f0a66959f544f5b885f3bd993f072f/BFV43733_ChowMein4Ways_FB1080SQ.jpg",
+
       meals: [
         {
           name: "Desayuno",
@@ -192,6 +209,9 @@ function App() {
     },
     {
       dayOfTheWeek: "Domingo",
+      image:
+        "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d7f0a66959f544f5b885f3bd993f072f/BFV43733_ChowMein4Ways_FB1080SQ.jpg",
+
       meals: [
         {
           name: "Desayuno",
