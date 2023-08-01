@@ -231,6 +231,21 @@ function App() {
     },
   ];
 
+  let ingredientList = [];
+  for (let i = 0; i < days.length; i++) {
+    const day = days[i];
+    const meals = day.meals;
+    for (let j = 0; j < meals.length; j++) {
+      const meal = meals[j];
+      const ingredients = meal.ingredients;
+      for (let k = 0; k < ingredients.length; k++) {
+        const ingredient = ingredients[k];
+        ingredientList.push(ingredient);
+      }
+    }
+  }
+  let uniqueIngredients = [...new Set(ingredientList)];
+
   return (
     <ChakraProvider>
       <Box w="370px" m="auto" p={4} align="left">
@@ -271,8 +286,9 @@ function App() {
           </Text>
           <Box>
             <Stack spacing={1} direction="column">
-              <Checkbox>Calabacin</Checkbox>
-              <Checkbox>Pimientos</Checkbox>
+              {uniqueIngredients.map((uniqueIngredient) => (
+                <Checkbox>{uniqueIngredient}</Checkbox>
+              ))}
             </Stack>
           </Box>
         </Box>
