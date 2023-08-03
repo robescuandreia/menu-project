@@ -10,7 +10,6 @@ import {
 import "./App.css";
 import { DailyMenu } from "./components/DailyMenu";
 
-
 // days - array of objects
 //  dayOfTheWeek - string
 //  image - string
@@ -20,7 +19,6 @@ import { DailyMenu } from "./components/DailyMenu";
 //    ingredients - array of objects
 //      name - string
 //      category - string
-
 
 // categories - array of objects
 //  name - string
@@ -284,7 +282,7 @@ function App() {
 
   return (
     <ChakraProvider>
-      <Box w="370px" m="auto" p={4} align="left">
+      <Box p={4} align="left">
         {/* title description container */}
         <Box mb="16px">
           <Text mb="8px" align="center" fontSize="4xl">
