@@ -34,18 +34,30 @@ function App() {
         {
           name: "Desayuno",
           description: "tostada con tomate",
-          ingredients: ["pan", "tomates"],
+          ingredients: [
+            {
+              name: "pan",
+              category: "panaderia y pasteleria",
+            },
+            { name: "tomates", category: "fruta y verdura" },
+          ],
         },
         {
           name: "Comida",
           description:
             "pollo teriyaki al horno, con arroz, tomate cherry y mango",
           ingredients: [
-            "pechuga de pollo",
-            "salsa teriyaki",
-            "arroz",
-            "tomate cherry",
-            "mango",
+            {
+              name: "pechuga de pollo",
+              category: "carne",
+            },
+            { name: "salsa teriyaki", category: "aceite, especias y salsas" },
+            {
+              name: "arroz",
+              category: "arroz, legumbres y pasta",
+            },
+            { name: "tomate cherry", category: "fruta y verdura" },
+            { name: "mango", category: "fruta y verdura" },
           ],
         },
         {
@@ -53,14 +65,20 @@ function App() {
           description:
             "ensalada de aguacate, tomate y paraguayo con pollo rebozado",
           ingredients: [
-            "lechuga",
-            "tomates",
-            "aguacates",
-            "pechuga de pollo",
-            "paraguayos",
-            "huevos",
-            "harina",
-            "pan rallado",
+            {
+              name: "lechuga",
+              category: "fruta y verdura",
+            },
+            { name: "tomates", category: "fruta y verdura" },
+            {
+              name: "aguacates",
+              category: "fruta y verdura",
+            },
+            { name: "pechuga de pollo", category: "carne" },
+            { name: "paraguayos", category: "fruta y verdura" },
+            { name: "huevos", category: "huevos, leche y mantequilla" },
+            { name: "harina", category: "panaderia y pasteleria" },
+            { name: "pan rallado", category: "panaderia y pasteleria" },
           ],
         },
       ],
@@ -74,22 +92,41 @@ function App() {
         {
           name: "Desayuno",
           description: "tostada con mantequilla y marmelada",
-          ingredients: ["pan", "mantequilla", "marmelada"],
+          ingredients: [
+            {
+              name: "pan",
+              category: "panaderia y pasteleria",
+            },
+            { name: "mantequilla", category: "huevos, leche y mantequilla" },
+            { name: "marmelada", category: "azucar, caramelos y chocolate" },
+          ],
         },
         {
           name: "Comida",
           description: "hamburguesa de angus con mango y queso chedar fundido",
           ingredients: [
-            "pan hamburguesa",
-            "hamburguesa angus",
-            "mango",
-            "queso chedar",
+            {
+              name: "pan hamburguesa",
+              category: "panaderia y pasteleria",
+            },
+            { name: "hamburguesa angus", category: "carne" },
+            { name: "mango", category: "fruta y verdura" },
+            { name: "queso chedar", category: "charcuteria y quesos" },
           ],
         },
         {
           name: "Cena",
           description: "ensalada de atun, queso, tomate y maiz",
-          ingredients: ["lechuga", "tomates", "atun", "queso", "maiz"],
+          ingredients: [
+            {
+              name: "lechuga",
+              category: "panaderia y pasteleria",
+            },
+            { name: "tomates", category: "fruta y verdura" },
+            { name: "atun", category: "conservas, caldos y cremas" },
+            { name: "queso", category: "charcuteria y quesos" },
+            { name: "maiz", category: "conservas, caldos y cremas" },
+          ],
         },
       ],
     },
